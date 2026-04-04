@@ -1,0 +1,35 @@
+{
+  "name": "qrownd-backend",
+  "version": "2.0.0",
+  "description": "Qrownd Backend – Node.js + Express + Socket.io + MongoDB + Firebase",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0",
+    "socket.io": "^4.7.2",
+    "firebase-admin": "^12.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^7.2.0",
+    "express-validator": "^7.0.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "multer": "^1.4.5-lts.1",
+    "cloudinary": "^2.0.1",
+    "winston": "^3.11.0",
+    "hpp": "^0.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": { "node": ">=18.0.0" }
+}
