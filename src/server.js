@@ -17,7 +17,6 @@ app.use(cors({
 }));
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 const PORT = process.env.PORT || 4000
-api
 const start = async () => {
   // 1. Database
   await connectDB()
