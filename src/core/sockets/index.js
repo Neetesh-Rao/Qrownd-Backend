@@ -20,7 +20,7 @@ let ioInstance = null
 const initSockets = (httpServer) => {
   ioInstance = new Server(httpServer, {
     cors: {
-      origin:      process.env.FRONTEND_URL || 'http://localhost:3000',
+      origin:      'https://qrownd-frontend.vercel.app',
       methods:     ['GET','POST'],
       credentials: true,
     },
