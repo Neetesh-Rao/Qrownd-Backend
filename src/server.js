@@ -9,7 +9,13 @@ const { initSockets }  = require('./core/sockets/index')
 const logger           = require('./core/utils/logger')
 const dns=require('dns')
 const cors = require('cors')
-app.use(cors());
+
+
+app.use(cors({
+  origin: "https://qrownd-frontend.vercel.app", // allow all origins, or replace "*" with your frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 const PORT = process.env.PORT || 4000
 
