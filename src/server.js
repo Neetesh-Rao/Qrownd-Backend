@@ -12,9 +12,8 @@ const cors = require('cors')
 
 
 app.use(cors({
-  origin: "https://qrownd-frontend.vercel.app", // allow all origins, or replace "*" with your frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  origin: "https://qrownd-frontend.vercel.app",
+  credentials: true // if you are using cookies/auth
 }));
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 const PORT = process.env.PORT || 4000
